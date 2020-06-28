@@ -92,8 +92,8 @@ public class AbstractEmbeddedTomcatSeleniumTest {
 		driver.findElement(By.name("username")).sendKeys(username);
         driver.findElement(By.name("password")).sendKeys(password);
         driver.findElement(By.name("login")).submit();
-        FluentWait<WebDriver> wait = new WebDriverWait(driver, 2).pollingEvery(100, TimeUnit.MILLISECONDS);
-        wait.until((Function<WebDriver, Boolean>)driver -> driver.findElement(By.id("service")) != null);
+        //FluentWait<WebDriver> wait = new WebDriverWait(driver, 2).pollingEvery(100, TimeUnit.MILLISECONDS);
+        //wait.until((Function<WebDriver, Boolean>)driver -> driver.findElement(By.id("service")) != null);
 	}
 	
 	protected void employeeLogin(String username, String password) {
@@ -101,8 +101,8 @@ public class AbstractEmbeddedTomcatSeleniumTest {
 		driver.findElement(By.name("username")).sendKeys(username);
         driver.findElement(By.name("password")).sendKeys(password);
         driver.findElement(By.name("login")).submit();
-        FluentWait<WebDriver> wait = new WebDriverWait(driver, 2).pollingEvery(100, TimeUnit.MILLISECONDS);
-        wait.until((Function<WebDriver, Boolean>)driver -> driver.findElement(By.id("service")) != null);
+        //FluentWait<WebDriver> wait = new WebDriverWait(driver, 2).pollingEvery(100, TimeUnit.MILLISECONDS);
+        //wait.until((Function<WebDriver, Boolean>)driver -> driver.findElement(By.id("service")) != null);
 	}
 	
 	protected void logout() {
